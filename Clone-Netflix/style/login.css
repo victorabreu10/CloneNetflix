@@ -1,0 +1,75 @@
+body {
+  background-image: linear-gradient(var(--black-075), var(--black-075) 100%),
+    url('../img/fundo.jpg');
+  height: 100%;
+}
+
+nav {
+  color: var(--primary-100);
+  padding: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-2);
+  font-size: 2rem;
+}
+
+main {
+  width: 60vw;
+  background-color: var(--black-075);
+  color: var(--white-100);
+  padding: var(--space-7);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+main > h1 {
+  padding: var(--space-4) var(--space-0);
+}
+
+.login-form__input {
+  width: 100%;
+  background-color: var(--black-020);
+  color: var(--white-100);
+
+  font-size: large;
+
+  padding: var(--space-4) var(--space-4);
+  margin: var(--space-2) var(--space-1);
+  margin-bottom: var(--space-4);
+
+  border: none;
+  border-radius: var(--border-radius-input);
+}
+
+.login-form__input:valid {
+  border-bottom: 1px solid lime;
+}
+
+.login-form__input:invalid {
+  border-bottom: 1px solid goldenrod;
+}
+.login-form__submit {
+  width: 100%;
+  color: var(--white-100);
+  background-color: var(--primary-100);
+  padding: var(--space-4) var(--space-4);
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+  border: none;
+  border-radius: var(--border-radius-input);
+}
+
+@media only screen and (max-width: 740px) {
+  body {
+    background-color: #000;
+    background-image: none;
+  }
+
+  main {
+    width: 100vw;
+    padding: var(--space-5);
+  }
+}
